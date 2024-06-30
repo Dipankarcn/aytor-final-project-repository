@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYTOR</title>
+    <!-- CSS ONLY -->
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./stylesheet/all.min.css">
+    <!--*BOOTSTRAP  -->
+    <link rel="stylesheet" href="./stylesheet/bootstrap.min.css">
+    <!-- SLIKSIDER -->
+    <link rel="stylesheet" href="./stylesheet/slick.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- *MAIN CSS -->
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <!-- *RESPONSIVE CSS -->
+    <link rel="stylesheet" href="./stylesheet/responsive.css">
+     <!-- CSS ENDS -->
+</head>
+<body>
+  <header>
+    <!--MAIN NAVBAR STARTS -->
+  <nav class="navbar navbar-expand-lg d-none d-lg-block p-0">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./images/Logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navlg">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home </a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+            <div class="submenu">
+              <ul>
+                <li><a href="./grid.html">Shop - Grid</a></li>
+                <li><a href="./details.html">Shop - Details Style One</a></li>
+                <li><a href="./compare.html">Compare</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+                <li><a href="./cheakout.html">Checkout</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+            <div class="submenu">
+              <ul>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./error.html">Error</a></li>
+                <li><a href="./popup.html">Pop Up</a></li>                  
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./features.html">Features <i class="fa-solid fa-angle-down"></i> </a>
+            <div class="submenu">
+              <ul>
+                <li><a href="./features.html">Features 1</a></li>
+                <li><a href="./features.html">Features 2</a></li>
+                <li><a href="./features.html">Features 3</a></li>
+                <li><a href="./features.html">Features 4</a></li>
+                <li><a href="./features.html">Features 5</a></li>
+                <li><a href="./features.html">Features 6</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Blogs <i class="fa-solid fa-angle-down"></i></a>
+            <div class="submenu">
+              <ul>
+                <li><a href="./blog.html">Blogs</a></li>
+                <li><a href="./classic.html">Blog - Classic</a></li>
+                <li><a href="./sidebar.html">Classic With Sidebar</a></li>
+                <li><a href="./blogdetails.html">Blog - Details</a></li>                  
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+          </li>
+          
+        </ul>          
+      </div>
+
+      <div class="socialLink">
+        <ul>                   
+          <li>
+            <a href="#" class="searchIcon1"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+          </li>  
+          <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-bag-shopping"></i>
+          <span class="cartcount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>    
+  <!-- SEARCH BAR STARTS -->
+ <div class="box">
+    <div class="searchIcon2">
+      <i class="fa fa-times"></i>
+    </div>
+    <form action="" class="form-area">
+      <input type="text" placeholder="Search Your Needs....." fdprocessedid="e5tvd">
+      <button fdprocessedid="1a2yeo"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+   </div>
+  <!-- SEARCH BAR ENDS -->
+  <!--MAIN NAVBAR ENDS -->
+
+
+
+  <!-- SECOND NAVBAR STARTS -->
+  <nav class=" d-lg-none navbarSm">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-3 menu text-center">
+          <!-- OFF CANVAS MENU -->
+          <a  data-bs-toggle="offcanvas" href="#offcanvasSm" role="button" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars"></i>
+          </a>          
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSm" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <a href="#"><img src="./images/Logo.png" height="50" alt=""></a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+              <ul>
+                <li>
+                 
+                  <li><a href="./index.html">Home</a></li>
+
+                </li>
+
+                <li>
+                  <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>                   
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./grid.html">Shop - Grid</a></li>
+                      <li><a class="dropdown-item" href="./details.html">Shop - Details Style One</a></li>
+                      <li><a class="dropdown-item" href="./compare.html">Compare</a></li>
+                      <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                      <li><a class="dropdown-item" href="./cheakout.html">Checkout</a></li>
+                      <li><a class="dropdown-item" href="./wishlist.html">Wishlist</a></li>
+                    </ul>
+                   </div>
+                </li>
+                
+                <li> 
+                  <div class="dropdown">
+                  <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>                   
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="./error.html">Error</a></li>
+                    <li><a class="dropdown-item" href="./popup.html">Pop Up</a></li> 
+                  </ul>
+                 </div>
+              </li>
+
+                <li>
+                  <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blogs 
+                    </a>                   
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./blog.html">Blogs</a></li> 
+                      <li><a class="dropdown-item" href="./classic.html">Blog - Classic</a></li>
+                      <li><a class="dropdown-item" href="./sidebar.html">Classic With Sidebar</a></li>
+                      <li><a class="dropdown-item" href="./blogdetails.html">Blog - Details</a></li>                       
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Feature
+                    </a>                   
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./features.html">Features 1</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 2</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 3</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 4</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 5</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 6</a></li>                       
+                    </ul>
+                   </div>
+                </li>                  
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+             
+            </div>
+          </div>
+           <!-- OFF CANVAS MENU ENDS-->
+        
+        </div>
+        <div class="col-4 logo"><img src="./images/Logo.png" alt=""></div>
+        <div class="col-5">
+          <div class="socialLink">
+            <ul>
+              <li>
+                <a href="#" class="searchIconSm" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>                
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i>
+              <span class="cartcount">0</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- SEARCH BAR STARTS -->
+  <div class="smallbox">
+    <div class="searchIconMobile">
+      <i class="fa fa-times"></i>
+    </div>
+    <form action="" class="form-area">
+      <input type="text" placeholder="Search Your Needs.....">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </div>
+  <!-- SEARCH BAR ENDS -->
+  <!-- SECOND NAVBAR ENDS -->
+  </header>
+
+  <main>
+    <!-- ** -->
+    <section style="background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url(./images/breadcumb_bg_2.jpg);" id="headline">
+      <div class="container">
+        <h3>Blog - Details</h3>
+        <p>Home / Blog</p>
+      </div>
+    </section>
+
+    <section id="classic">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+             <!-- CART 1 -->          
+               <div style="box-shadow: none; background-color: #fff;" class="classiccard ">               
+                          <div class="ProductsSliderclassic">
+                     
+                            <!--PRODUCT SLIDER 1-->                  
+                              <div class="ProductsSlide">
+                                <div  class="productImage">
+                                  <a href="#">
+                                    <img src="./images/blog-s-1-1.jpg" alt="">
+                                  </a>         
+                                </div>       
+                              </div>
+                            <!--PRODUCT SLIDER 2-->                    
+                            <div class="ProductsSlide">
+                              <div  class="productImage">
+                                <a href="#">
+                                  <img src="./images/blog-s-1-1.jpg" alt="">
+                                </a>         
+                              </div>       
+                            </div>
+                            <!--PRODUCT SLIDER 3-->        
+                            <div class="ProductsSlide">
+                              <div  class="productImage">
+                                <a href="./product.html">
+                                  <img src="./images/blog-s-1-1.jpg" alt="">
+                                </a>         
+                              </div>       
+                            </div>
+                            <!--PRODUCT SLIDER 4-->        
+                            <div class="ProductsSlide">
+                              <div  class="productImage">
+                                <a href="./product.html">
+                                  <img src="./images/blog-s-1-1.jpg" alt="">
+                                </a>         
+                              </div>       
+                            </div>
+                            <!--PRODUCT SLIDER 5-->        
+                            <div class="ProductsSlide">
+                              <div  class="productImage">
+                                <a href="./product.html">
+                                  <img src="./images/blog-s-1-1.jpg" alt="">
+                                </a>         
+                              </div>       
+                            </div>  
+                  
+                          </div>
+                          <div id="productLeftArrow" class="leftArrows">
+                            <i class="fa-solid fa-chevron-left"></i>
+                          </div>
+                  
+                          <div id="productRightArrow" class="rightArrows">
+                            <i class="fa-solid fa-angle-right"></i>          
+                          </div>
+                        
+                        <div style="margin-top: 35px;" class="classtext p-0">
+                          <ul class="d-flex justify-content-between">
+                            <li class="d-flex">
+                              <p>Michel-Fashion Admin</p>
+                              <span><i class="fa-regular fa-calendar-days"></i>January 04, 2022</span>
+                            </li>   
+                            <li class="slideicon">
+                              <a href="#"><i class="fa-solid fa-heart"></i> <span>like(2.2k)</span></a>
+                              <a href="#"><i class="fa-solid fa-comment-dots"></i> <span>Comment(03)</span></a>
+                              <a href="#"><i class="fa-solid fa-share-from-square"></i> <span>Share</span></a>
+                            </li>                               
+                          </ul>
+                          <h2><a href="#">Color, Size, Material Swatches</a></h2>  
+                          <p>Compellingly extend client-based catalysts for change with adaptive information. Appropriately repurpose inexpensive networks vis-a-vis
+                             turnkey customer service. Distinctively drive viral catalysts for change whereas high-payoff supply chains. Progressively myocardinate
+                              highly efficient meta-services via cutting-edge core competencies. Dynamically target mission-critical expertise. Professionally enable
+                               resource sucking information rather than sustainable infrastructures. Competently empower market-driven communities through interoperable
+                                systems. Proactively exploit quality resources rather than real-time "outside the box" thinking.</p>
+                             
+                        </div>
+               </div>  
+               
+               <div class="para">
+                <p>Professionally implement installed base initiatives vis-a-vis low-risk high-yield leadership. Enthusiastically synthesize
+                   magnetic functionalities vis-a-vis low-risk high-yield ideas. Quickly architect.</p>
+                    <div class="paraimage text-end">
+                      <img src="./images/oi_double-quote-sans-left.png" alt="">
+                    </div>
+               </div>
+                <!-- PARA -->
+              <p>
+                Authoritatively innovate resource maximizing quality vectors vis-a-vis performance based interfaces. Uniquely productivate 
+                intermandated web services before fully researched users. Quickly productivate open-source sources through bleeding-edge 
+                growth strategies. Authoritatively grow unique solutions and high-quality e-commerce.
+              </p>
+                <!-- COMBINATION -->
+              <div class="row rightandleft">
+                <div class="col-lg-6 p-0">
+                  <img style="width: 100%;" src="./images/blog-left.jpg" alt="">
+                </div>
+                <div class="col-lg-6 p-0">
+                  <img width="100%" src="./images/blog-right.jpg" alt="">
+                </div>
+              </div>
+                 <!-- PARA -->
+              <p>
+                Authoritatively revolutionize cutting-edge alignments for transparent synergy. Proactively integrate wireless convergence
+                 rather than backend data. Interactively harness team driven materials for prospective growth strategies. Dramatically 
+                 reconceptualize distributed manufactured products through enabled ROI. Distinctively target scalable architectures before
+                  dynamic results. Appropriately revolutionize end-to-end resources after an expanded array of total linkage. Phosfluorescently
+                   predominate.
+              </p>
+                <!-- TAGS -->
+              <div class="tag">
+                <ul class="d-flex justify-content-between">
+                  <li class="stag">
+                    <span>Tags:</span>
+                     <a href="#">Accessories</a>
+                     <a href="#">Fashion</a>
+                  </li>
+                  <li class="socialicon">
+                    <span>Share:</span>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  </li>
+                </ul>
+              </div>
+               <!-- COMPANY'S COMMENT -->
+              <div class="commentone">
+                <div class="row">
+                  <div class="col-lg-2 text-center">
+                    <img src="./images/comment-author-2.webp" alt="">
+                  </div>
+                  <div class="col-lg-10 ps-0 text">
+                    <h4>AetorStudio</h4>
+                    <h6>Author</h6>
+                    <div class="icon">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                    <p>Synergistically synergize cross-media mindshare via extensible infomediaries. Professionally unleash mission -critical
+                       e-tailers with virtual e-tailers.</p>
+                  </div>
+                </div>
+              </div>
+               <!-- COMPANY & CLAIENT's COMMENT -->
+              <div class="commentsecond">
+                <h3>Comment (03)</h3>
+                <!-- 1ST COMMENT -->
+                <div class="cardone">
+                  <ul class="d-flex justify-content-between">
+                    <li><img src="./images/comment-author-2.webp" alt=""></li>
+                    <li>
+                      <h5>AetorStudio</h5>
+                      <ul class="d-flex justify-content-between">
+                        <li><span>January 04, 2022  08:56pm</span></li>
+                        <li><a href="#"><i class="fa-solid fa-reply"></i><span>Reply</span></a></li>
+                      </ul>                 
+                      
+                      <p>Assertively maintain value-added e-commerce and progressive bandwidth. Credibly myocardinate just in time best 
+                        practic- es after proactive innovation.</p>
+                    </li>
+                  </ul>                
+                </div>
+                 <!-- 2ND COMMENT -->
+                <div class="cardmiddle">
+                  <ul class="d-flex justify-content-between">
+                    <li><img src="./images/comment-author-1.jpg" alt=""></li>
+                    <li>
+                      <h5>RoyStudio</h5>
+                      <ul class="d-flex justify-content-between">
+                        <li><span>January 04, 2022  08:56pm</span></li>
+                        <li><a href="#"><i class="fa-solid fa-reply"></i><span>Reply</span></a></li>
+                      </ul>                     
+                      <p>
+                        Competently cultivate virtual web-readiness vis-a-vis sticky customer service. Completely embrace backward-compatible 
+                        services through magnetic content. Uniquely unleash.
+                      </p>
+                    </li>
+                  </ul>                 
+                </div>
+                  <!-- 3RD COMMENT -->
+                <div class="cardone">
+                  <ul class="d-flex justify-content-between">
+                    <li><img src="./images/comment-author-2.webp" alt=""></li>
+                    <li>
+                      <h5>AetorStudio</h5>
+                      <ul class="d-flex justify-content-between">
+                        <li><span>January 04, 2022  08:56pm</span></li>
+                        <li><a href="#"><i class="fa-solid fa-reply"></i><span>Reply</span></a></li>
+                      </ul>                 
+                      
+                      <p>Assertively maintain value-added e-commerce and progressive bandwidth. Credibly myocardinate just in time best 
+                        practic- es after proactive innovation.</p>
+                    </li>
+                  </ul>                
+                </div>
+              </div>
+              <!-- LEAVE YOUR COMMENT HERE -->
+              <div class="leavereply">
+                <div class="writecomment">
+                  <h2>Leave a Reply</h2>
+                <p>Your email address will not be published. Required fields are marked *</p>
+                <div class="row frist">
+                  <div class="col-lg-6">
+                    <input class="form-control" type="text" placeholder="Name*" aria-label="default input example">
+                  </div>
+                  <div class="col-lg-6">
+                    <input class="form-control" type="text" placeholder="Email Address*" aria-label="default input example">
+                  </div>                  
+                </div>
+                <input  class="form-control website" type="text" placeholder="Website*" aria-label="default input example">
+                <input class="form-control commenthere" type="text" placeholder="Comment*" aria-label="default input example">
+                <button type="button" class="btn btn-primary btn-lg">Post Comments</button>
+              </div>
+                </div>
+               
+
+          </div>
+          <div class="col-lg-3 slidebar">
+            <div class="input-group ">
+              <input type="text" class="form-control" placeholder="Search Here...." aria-label="Search Here...." aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+
+            <h3>Categories</h3>
+            <!-- TABLE NO 1 -->
+            <table class="w-100">
+              <!-- TABLE ROW 1  -->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Fashion</li>
+                    <li>(5)</li>
+                  </ul>
+                </td>
+                
+              </tr>
+              <!-- TABLE ROW 2-->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Furnitures</li>
+                    <li>(2)</li>
+                  </ul>
+                </td>
+                
+              </tr>
+              <!-- TABLE ROW 3-->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Electronics</li>
+                    <li>(3)</li>
+                  </ul>
+                </td>
+                
+              </tr>
+              <!-- TABLE ROW 4-->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Cosmetics</li>
+                    <li>(6)</li>
+                  </ul>
+                </td>
+                
+              </tr>
+              <!-- TABLE ROW 5-->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Wine</li>
+                    <li>(2)</li>
+                  </ul>
+                </td>
+                
+              </tr>
+              <!-- TABLE ROW 6-->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Frame Sunglasses</li>
+                    <li>(2)</li>
+                  </ul>
+                </td>
+                
+              </tr>
+              <!-- TABLE ROW 7-->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Jewellery</li>
+                    <li>(4)</li>
+                  </ul>
+                </td>
+                
+              </tr>
+              <!-- TABLE ROW 8-->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Accessories</li>
+                    <li>(3)</li>
+                  </ul>
+                </td>
+                
+              </tr>
+              <!-- TABLE ROW 9-->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Fashion</li>
+                    <li>(7)</li>
+                  </ul>
+                </td>                  
+              </tr>
+              <!-- TABLE ROW 10-->
+              <tr>
+                <td>
+                  <ul class="d-flex justify-content-between">
+                    <li>Medicine</li>
+                    <li>(5)</li>
+                  </ul>
+                </td>
+                
+              </tr>
+            </table>
+            <!-- TABLE NO 2 -->
+             <h3>Recent Posts</h3>
+             <table class="tabletwo">
+              <!-- TABLE 2 ROW 1 -->
+              <tr>
+                <td>
+                  <ul class="d-flex">
+                    <li><img src="./images/recent-post-1-1.jpg" alt=""></li>
+                    <li>
+                      <h6>Fashion Women New Key
+                      Trends</h6>
+                      <p>January 04, 2022</p>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <!-- TABLE 2 ROW 2 -->
+              <tr>
+                <td>
+                  <ul class="d-flex">
+                    <li><img src="./images/recent-post-1-2.jpg" alt=""></li>
+                    <li>
+                      <h6>New Women Long Kurta
+                        Collection</h6>
+                      <p>January 04, 2022</p>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <!-- TABLE 2 ROW 3 -->
+              <tr>
+                <td>
+                  <ul class="d-flex">
+                    <li><img src="./images/recent-post-1-3.jpg" alt=""></li>
+                    <li>
+                      <h6>Fashionable Modern Hand
+                        Bag</h6>
+                      <p>January 04, 2022</p>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+             </table>
+             <h3>Tags</h3>
+             <div class="tags">
+              <a href="#">Accessories</a>
+              <a href="#">Fashion</a>
+              <a href="#">Sports</a>
+              <a href="#">Food</a>
+              <a href="#">Furnitures</a>
+              <a href="#">Jewellery</a>
+              <a href="#">Mobile</a>
+              <a href="#">Toyes</a>
+              <a href="#">Technology</a>
+              <a href="#">Tips</a>
+             </div>
+
+             <div class="blackfriday">
+              <h4>#Black Friday</h4>
+              <h1>SALE</h1>
+              <h1>50%</h1>
+               <h5>Modern Dress</h5>
+             </div>
+          </div>     
+          
+         
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ** -->
+  </main>
+
+    
+     <!-- FOOTER START -->
+     <footer>
+        <!-- FOOTER PRECARD STARTS -->
+        <div class="prefooter container">
+          <div class="row ">
+            
+            <div class="col-lg-3">
+              <div class="freefcard">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <img src="./images/footer t 1.png" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h4>FREE SHIPING</h4> 
+                    <p>all orders over <span>$150</span></p>                 
+                  </div>
+                </div>
+              </div>            
+            </div>
+            <div class="col-lg-3">
+              <div class="freefcard">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <img src="./images/footer t 1.png" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h4>FREE SHIPING</h4> 
+                    <p>all orders over <span>$150</span></p>                 
+                  </div>
+                </div>
+              </div>            
+            </div>
+            <div class="col-lg-3">
+              <div class="freefcard">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <img src="./images/footer t 1.png" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h4>FREE SHIPING</h4> 
+                    <p>all orders over <span>$150</span></p>                 
+                  </div>
+                </div>
+              </div>            
+            </div>
+            <div class="col-lg-3">
+              <div class="freefcard">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <img src="./images/footer t 1.png" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h4>FREE SHIPING</h4> 
+                    <p>all orders over <span>$150</span></p>                 
+                  </div>
+                </div>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER PRECARD ENDS -->
+  
+        <!-- PREFOOTER TOP STARTS -->
+        <div class="prefooterT">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="social col-lg-3 order-3 text-center text-lg-start order-lg-1">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </div>
+              <div class="logo col-lg-6 text-center order-1 order-lg-2">
+                <a href=""><img src="./images/FOOTER Logo.png" alt=""></a>
+              </div>
+              <div class="paid col-lg-3 order-2 text-lg-end text-center order-lg-3 my-4 my-lg-0">
+                <a href="#"> <img src="./images/paidcd.png" alt=""></a>            
+              </div>          
+            </div>
+          </div>
+        </div>
+        <!-- PREFOOTER TOP ENDS -->
+        <!-- PREFOOTEE MIDDLE STARTS -->
+        <div class="prefooterM">
+         <div class="container">
+          <div class="row">
+            <!-- MY ACCOUNT STARTS -->
+            <div class="col-lg-2 d-inline-block " style="padding: 0;">
+             <div class="row">
+              <h5>My Account</h5> 
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span></i>My Account</a>
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>View Cart</a>
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Wishlist</a>
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Compare</a>
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>New Products</a>  
+             </div>         
+            </div>
+            <!-- MY ACCOUNT ENDS -->
+            <!-- MY SUPPORT STARTS -->
+            <div class="col-lg-2" style="padding: 0;">
+              <div class="row">
+                <h5>Support</h5> 
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span></i>Help</a>
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Contact Us</a>
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Feedback</a>
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Customer Service</a>
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Store Locations</a>  
+               </div> 
+            </div>  
+            <!-- MY SUPPORT STARTS -->        
+            <!-- <div class="row"> -->
+              <div class="col-lg-2 openingTime">
+                  <h5>Opening Time</h5>
+                  <div class="row">
+                    <ul>
+                      <li class="d-inline-block justify-content-between">
+                        <p>Mon - Tue:</p>
+                        <p>Wed:</p>
+                        <p>Fri: </p>
+                        <p>Sat: </p>
+                        <p>Sun:</p>
+  
+                        
+                      </li>
+                      <li class="d-inline-block justify-content-between">
+                        <p>8AM - 10PM</p>
+                        <p> 8AM - 7PM</p>
+                        <p>7AM - 12PM</p>
+                        <p>9AM - 8PM</p>
+                        <p>Closed</p>
+                        
+                      </li>
+                    </ul >
+                  </div>
+                
+              </div>
+            <!-- </div> -->
+            <!-- MY SUPPORT ENDS -->
+  
+              <!-- MY CONTACT STARTS --> 
+              <div class="col-lg-3 contact">
+                <h5>Contact Us</h5>
+                <ul class="d-flex" >
+                  <li><i class="fa-solid fa-location-dot"></i></li>
+                  <li><a href="#">830 Broad way, New York, NY 10003,
+                    United States</a></li>
+                </ul>
+                <ul class="d-flex" >
+                  <li><i class="fa-solid fa-phone"></i></li>
+                  <li><a href="tell:+18008660286">+18008660286</a></li>
+                </ul>
+                <ul class="d-flex" >
+                  <li><i class="fa-solid fa-envelope"></i></li>
+                  <li><a href="mailto:aetor.info@gmail.com">aetor.info@gmail.com</a><br><a href="mailto:info@aetor.com">info@aetor.com</a></li>
+                </ul>           
+                  
+          </div>
+            <!-- MY CONTACT ENDS --> 
+            <!-- MY NEWSLETTER STARTS --> 
+            <div class="col-lg-3 newsLetter"> 
+              <h5>News Letter</h5> 
+              <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>         
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter your email...." aria-label="Enter your email...." aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+                  </div>            
+                  
+                </div>
+                <!-- MY NEWS LETTER ENDS --> 
+              </div>
+            </div>
+          </div>
+          <!-- PREFOOTER MIDDLE ENDS -->
+         </div>
+        </div>
+      </footer>
+      <!-- FOOTER ENDS -->
+      <!-- LAST FOOTER STARTS -->
+      <section id="lastFooter">
+        <div class="copyright">
+          <p>© 2022 All Rights Reserved <span>Aytor</span> By <span> Angfuzsoft.</span></p>
+  
+        </div>
+      </section>
+       <!-- LAST FOOTER ENDS -->  
+      
+  
+  <!-- JS ONLY -->
+  <!-- J QUERY -->
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- SLIK JS -->
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery.countdown.min.js"></script>
+  <!-- MAIN JS -->
+  <script src="./js/apps.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYTOR</title>
+    <!-- CSS ONLY -->
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./stylesheet/all.min.css">
+    <!--*BOOTSTRAP  -->
+    <link rel="stylesheet" href="./stylesheet/bootstrap.min.css">
+    <!-- SLIKSIDER -->
+    <link rel="stylesheet" href="./stylesheet/slick.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- *MAIN CSS -->
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <!-- *RESPONSIVE CSS -->
+    <link rel="stylesheet" href="./stylesheet/responsive.css">
+     <!-- CSS ENDS -->
+</head>
+<body>
+  <header>
+    <!--MAIN NAVBAR STARTS -->
+  <nav class="navbar navbar-expand-lg d-none d-lg-block p-0">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./images/Logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navlg">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home </a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+            <div class="submenu">
+              <ul>
+                <li><a href="./grid.html">Shop - Grid</a></li>
+                <li><a href="./details.html">Shop - Details Style One</a></li>
+                <li><a href="./compare.html">Compare</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+                <li><a href="./cheakout.html">Checkout</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+            <div class="submenu">
+              <ul>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./error.html">Error</a></li>
+                <li><a href="./popup.html">Pop Up</a></li>                  
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./features.html">Features <i class="fa-solid fa-angle-down"></i> </a>
+            <div class="submenu">
+              <ul>
+                <li><a href="./features.html">Features 1</a></li>
+                <li><a href="./features.html">Features 2</a></li>
+                <li><a href="./features.html">Features 3</a></li>
+                <li><a href="./features.html">Features 4</a></li>
+                <li><a href="./features.html">Features 5</a></li>
+                <li><a href="./features.html">Features 6</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Blogs <i class="fa-solid fa-angle-down"></i></a>
+            <div class="submenu">
+              <ul>
+                <li><a href="./blog.html">Blogs</a></li>
+                <li><a href="./classic.html">Blog - Classic</a></li>
+                <li><a href="./sidebar.html">Classic With Sidebar</a></li>
+                <li><a href="./blogdetails.html">Blog - Details</a></li>                  
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+          </li>
+          
+        </ul>          
+      </div>
+
+      <div class="socialLink">
+        <ul>                   
+          <li>
+            <a href="#" class="searchIcon1"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+          </li>  
+          <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-bag-shopping"></i>
+          <span class="cartcount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>    
+  <!-- SEARCH BAR STARTS -->
+ <div class="box">
+    <div class="searchIcon2">
+      <i class="fa fa-times"></i>
+    </div>
+    <form action="" class="form-area">
+      <input type="text" placeholder="Search Your Needs....." fdprocessedid="e5tvd">
+      <button fdprocessedid="1a2yeo"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+   </div>
+  <!-- SEARCH BAR ENDS -->
+  <!--MAIN NAVBAR ENDS -->
+
+
+
+  <!-- SECOND NAVBAR STARTS -->
+  <nav class=" d-lg-none navbarSm">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-3 menu text-center">
+          <!-- OFF CANVAS MENU -->
+          <a  data-bs-toggle="offcanvas" href="#offcanvasSm" role="button" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars"></i>
+          </a>          
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSm" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <a href="#"><img src="./images/Logo.png" height="50" alt=""></a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+              <ul>
+                <li>
+                 
+                  <li><a href="./index.html">Home</a></li>
+
+                </li>
+
+                <li>
+                  <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>                   
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./grid.html">Shop - Grid</a></li>
+                      <li><a class="dropdown-item" href="./details.html">Shop - Details Style One</a></li>
+                      <li><a class="dropdown-item" href="./compare.html">Compare</a></li>
+                      <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                      <li><a class="dropdown-item" href="./cheakout.html">Checkout</a></li>
+                      <li><a class="dropdown-item" href="./wishlist.html">Wishlist</a></li>
+                    </ul>
+                   </div>
+                </li>
+                
+                <li> 
+                  <div class="dropdown">
+                  <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>                   
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="./error.html">Error</a></li>
+                    <li><a class="dropdown-item" href="./popup.html">Pop Up</a></li> 
+                  </ul>
+                 </div>
+              </li>
+
+                <li>
+                  <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blogs 
+                    </a>                   
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./blog.html">Blogs</a></li> 
+                      <li><a class="dropdown-item" href="./classic.html">Blog - Classic</a></li>
+                      <li><a class="dropdown-item" href="./sidebar.html">Classic With Sidebar</a></li>
+                      <li><a class="dropdown-item" href="./blogdetails.html">Blog - Details</a></li>                       
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Feature
+                    </a>                   
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./features.html">Features 1</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 2</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 3</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 4</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 5</a></li>
+                      <li><a class="dropdown-item" href="./features.html">Features 6</a></li>                       
+                    </ul>
+                   </div>
+                </li>                  
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+             
+            </div>
+          </div>
+           <!-- OFF CANVAS MENU ENDS-->
+        
+        </div>
+        <div class="col-4 logo"><img src="./images/Logo.png" alt=""></div>
+        <div class="col-5">
+          <div class="socialLink">
+            <ul>
+              <li>
+                <a href="#" class="searchIconSm" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>                
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i>
+              <span class="cartcount">0</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- SEARCH BAR STARTS -->
+  <div class="smallbox">
+    <div class="searchIconMobile">
+      <i class="fa fa-times"></i>
+    </div>
+    <form action="" class="form-area">
+      <input type="text" placeholder="Search Your Needs.....">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </div>
+  <!-- SEARCH BAR ENDS -->
+  <!-- SECOND NAVBAR ENDS -->
+  </header>
+    <main>
+        <section style="background-image: url(./images/breadcumb_bg_about.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; opacity: 0.7; " id="about">
+            <div class="container">
+                <h3>About Us</h3>
+                <p>Home  /  About Us</p>
+            </div>
+        </section>
+
+        <!-- ABOUT AYTOR SHOP STARTS -->
+        <section id="learn">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="./images/lea about 1.png" alt="">
+              </div>
+              <div class="col-lg-6 txt ">             
+
+                 <div class="row align-items-center">
+                  <h4>Learn About Aetor Shop</h4>
+                  <p>Interactively underwhelm effective relationships whereas team
+                    driven paradigms. Uniquely impact impactful meta-services vis -a-vis 
+                     fully tested best practices. Appropriately e-enable fully.</p>
+                     <span><i class="fa-solid fa-circle-check"></i>Assertively customize robust potentialities and economical</span>
+                     <span><i class="fa-solid fa-circle-check"></i>Seamlessly disintermediate distributed intellectual capital.</span>
+                     <span><i class="fa-solid fa-circle-check"></i>Credibly enable B2C potentialities after strategic.</span>  
+                     <a href="#">Discover More<i class="fa-solid fa-arrow-right-long"></i></a>   
+                 </div>                
+                
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- ABOUT AYTOR SHOP ENDS -->
+
+         <!-- COUNTER UP STARTS -->
+         <section id="upcount">
+          <div class="container">
+            <div class="row align-items-center text-center">
+              
+              <div class="col-lg-3">
+                <div class="icon">
+                  <img src="./images/counterup 1 .png" alt=""> 
+                </div>
+                 <div class="calculate">
+                   <span class="counter">22.3</span><span>k</span>
+                 </div>
+                 <p>Products for sale</p>
+               </div>
+
+              <div class="col-lg-3">
+               <div class="icon">
+                 <img src="./images/counterup 2.png" alt=""> 
+               </div>
+                <div class="calculate">
+                  <span class="counter">14.6</span><span>k</span>
+                </div>
+                <p>Sellers active on shop</p>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="icon">
+                  <img src="./images/counterup 3.png" alt=""> 
+                </div>
+                 <div class="calculate">
+                   <span class="counter">75.9</span><span>k</span>
+                 </div>
+                 <p>Customer active on store</p>
+               </div>
+
+               <div class="col-lg-3">
+                <div class="icon">
+                  <img src="./images/counterup 4.png" alt=""> 
+                </div>
+                 <div class="calculate">
+                   <span class="counter">35.5</span><span>k</span>
+                 </div>
+                 <p>Annual gross sales</p>
+               </div>
+              
+            </div>
+          </div>
+         </section>
+         <!-- COUNTER UP ENDS -->
+
+         <!-- OUR STORY STARTS -->
+         <section id="promo">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 aboutdetails order-2 order-lg-1 text-start">                     
+                      <h3>Our Story </h3>
+                      <p>Synergistically pontificate focused services whereas intuitive leadership.
+                         Competently predominate ubiquitous services rather than client-centric scenarios. 
+                         Distinctively mesh B2C benefits for superior customer service. Interactively
+                          e-enable inexpensive total linkage without quality materials. Phosfluorescently 
+                          negotiate.</p>
+                      <span>Professionally exploit user-centric technology for seamless solutions.
+                         Objectively morph unique strategic theme areas without cross functional mindshare.
+                          Synergistically aggregate adaptive functionalities rather than enterprise-wide experiences.
+                           Completely maintain.</span>
+                  </div>
+                  <div class="col-lg-7 order-1 order-lg-2">
+                      <div class="videoPromo">
+                          <div class="overlay">
+                              <a href="#"><i class="fa-solid fa-play"></i></a>
+                          </div>
+                          <img style="height: 488px;" class="w-100 d-block" src="./images/banner_8.webp" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>  
+         <!-- OUR STORY ENDS -->
+         <!-- LEADERSHIP STARTS HERE  -->
+         <section id="leadership">
+          <div class="container position-relative">
+            <h2 style="padding-bottom: 24px; text-align: center;" >Leadership Expart Team</h2>
+            <div class="ProductsSlider">
+               
+              <!--PRODUCT SLIDER 1-->              
+                <div class="ProductsSlide">
+                  <div  class="productImage">
+                    <a href="./product.html">
+                      <img src="./images/team_1.jpg" alt="">
+                    </a>   
+                  </div>
+                 
+    
+                 <div class="leadText">                   
+                  <a href="#">
+                    <h4>Michel Richard</h4>
+                  </a>
+                  <p>Founder</p>
+                    <span>
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-pinterest-p"></i>   
+                    </span>
+    
+                 </div>
+                </div>
+              <!--PRODUCT SLIDER 2-->
+                
+              <div class="ProductsSlide">
+                <div  class="productImage">
+                  <a href="./product.html">
+                    <img src="./images/team_2.jpg" alt="">
+                  </a>   
+                </div>
+               
+  
+               <div class="leadText">                   
+                <a href="#">
+                  <h4>Imon Hossain</h4>
+                </a>
+                <p>Marketar</p>
+                  <span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>   
+                  </span>
+  
+               </div>
+              </div>
+              <!--PRODUCT SLIDER 3-->
+    
+              <div class="ProductsSlide">
+                <div  class="productImage">
+                  <a href="./product.html">
+                    <img src="./images/team_3.jpg" alt="">
+                  </a>   
+                </div>
+               
+  
+               <div class="leadText">                   
+                <a href="#">
+                  <h4>Sudjida Lufz</h4>
+                </a>
+                <p>Support</p>
+                  <span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>   
+                  </span>
+  
+               </div>
+              </div>
+              <!--PRODUCT SLIDER 4-->
+    
+              <div class="ProductsSlide">
+                <div  class="productImage">
+                  <a href="./product.html">
+                    <img src="./images/team_4.jpg" alt="">
+                  </a>   
+                </div>
+               
+  
+               <div class="leadText">                   
+                <a href="#">
+                  <h4>Henry Josep</h4>
+                </a>
+                <p>Director</p>
+                  <span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>   
+                  </span>
+  
+               </div>
+              </div>
+              <!--PRODUCT SLIDER 5-->
+    
+              <div class="ProductsSlide">
+                <div  class="productImage">
+                  <a href="./product.html">
+                    <img src="./images/team_5.jpg" alt="">
+                  </a>   
+                </div>
+               
+  
+               <div class="leadText">                   
+                <a href="#">
+                  <h4>Mariya Rozie</h4>
+                </a>
+                <p>Developer</p>
+                  <span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>   
+                  </span>
+  
+               </div>
+              </div>              
+    
+            </div>
+            
+            <div id="productLeftArrow" class="leftArrows">
+              <i class="fa-solid fa-caret-left"></i>
+            </div>
+    
+            <div id="productRightArrow" class="rightArrows">
+              <i class="fa-solid fa-caret-right"></i>
+    
+            </div>
+    
+          </div>
+        </section>
+         <!-- LEADERSHIP ENDS HERE  -->
+         <!-- REVIEW STATS HERE -->
+         <section id="review">
+          <div class="container">
+             <div class="row">
+                <div style="text-align: center;" class="image">
+                  <img src="./images/coustomar.png" alt="">
+                </div>
+                <div style="text-align: center;" class="reviewSlider">
+                  <div class="slider">
+                    <div style="text-align: center; padding-top: 25px; display: inline-block;" class="image2">
+                      <img  src="./images/review .png" alt="">
+                    </div>
+                    <div class="text">
+                      <p>Distinctively revolutionize functional sources rather than cutting-edge interfaces. <br>
+                        Appropriately productize next-generation infomediaries without interoperable e- <br>
+                        business. Progressively empower.
+                      </p>
+                      <h3>Alexzender Markos</h3>
+                      <span>Customer</span>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <div style="text-align: center; padding-top: 25px; display: inline-block; " class="image2">
+                      <img style="width: 100px; height: 100px;" src="./images/review 2.png" alt="">
+                    </div>
+                    <div class="text">
+                      <p>Distinctively revolutionize functional sources rather than cutting-edge interfaces. <br>
+                        Appropriately productize next-generation infomediaries without interoperable e- <br>
+                        business. Progressively empower.
+                      </p>
+                      <h3>Jhon</h3>
+                      <span>Customer</span>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <div style="text-align: center; padding-top: 25px; display: inline-block;" class="image2">
+                      <img style="width: 100px; height: 100px;" src="./images/review 3.png" alt="">
+                    </div>
+                    <div class="text">
+                      <p>Distinctively revolutionize functional sources rather than cutting-edge interfaces. <br>
+                        Appropriately productize next-generation infomediaries without interoperable e- <br>
+                        business. Progressively empower.
+                      </p>
+                      <h3>RD Junior</h3>
+                      <span>Customer</span>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+         </section>
+         <!-- REVIEW ENDS HERE -->
+
+         <!-- AEYTOR INSTRAGRAM STARTS HERE -->
+         <section id="instragram">
+          <div class="container">
+            <h2 style="text-align: center;" >@Aetor Instagram</h2>              
+               <div class="tSlider"> 
+
+                   <div class="slider">
+                              <div class="img"><img class="d-block" src="./images/insta_1.jpg" alt="" >
+                                <!-- overlay -->
+                                <div class="overlay">
+                                  <div class="content">
+                                    <i class="fa-brands fa-instagram"></i>
+                                  </div>
+                                </div>
+                                <!-- overlay Ends -->
+                              </div>
+                                      
+                   </div>
+              
+                   <div class="slider">
+                            <div class="img"><img class="d-block" src="./images/insta_2.jpg" alt="" >
+
+                              <!-- overlay -->
+                              <div class="overlay">
+                                <div class="content">
+                                  <i class="fa-brands fa-instagram"></i>
+                                </div>
+                              </div>
+                              <!-- overlay Ends -->
+                            </div>
+                                    
+                   </div>
+              
+                   <div class="slider">
+                          <div class="img"><img class="d-block" src="./images/insta_3.jpg" alt="" >
+
+                            <!-- overlay -->
+                            <div class="overlay">
+                              <div class="content">
+                                <i class="fa-brands fa-instagram"></i>
+                              </div>
+                            </div>
+                            <!-- overlay Ends -->
+                          </div>
+                                  
+                   </div>
+              
+                   <div class="slider">
+                        <div class="img"><img class="d-block" src="./images/insta_4.jpg" alt="" >
+
+                          <!-- overlay -->
+                          <div class="overlay">
+                            <div class="content">
+                              <i class="fa-brands fa-instagram"></i>
+                            </div>
+                          </div>
+                          <!-- overlay Ends -->
+                        </div>
+                                
+                   </div>
+                        
+                   <div class="slider">
+                      <div class="img"><img class="d-block" src="./images/insta_5.jpg" alt="" >
+
+                        <!-- overlay -->
+                        <div class="overlay">
+                          <div class="content">
+                            <i class="fa-brands fa-instagram"></i>
+                          </div>
+                        </div>
+                        <!-- overlay Ends -->
+                      </div>
+                              
+                   </div>
+              
+                   <div class="slider">
+                    <div class="img"><img class="d-block" src="./images/insta_6.jpg" alt="" >
+
+                      <!-- overlay -->
+                      <div class="overlay">
+                        <div class="content">
+                          <i class="fa-brands fa-instagram"></i>
+                        </div>
+                      </div>
+                      <!-- overlay Ends -->
+                    </div>
+                            
+                   </div>
+              
+                   <div class="slider">
+                  <div class="img"><img class="d-block" src="./images/insta_7.jpg" alt="" >
+
+                    <!-- overlay -->
+                    <div class="overlay">
+                      <div class="content">
+                        <i class="fa-brands fa-instagram"></i>
+                      </div>
+                    </div>
+                    <!-- overlay Ends -->
+                  </div>
+                          
+                   </div>
+                   <div class="slider">
+                    <div class="img"><img class="d-block" src="./images/insta_8.jpg" alt="" >
+  
+                      <!-- overlay -->
+                      <div class="overlay">
+                        <div class="content">
+                          <i class="fa-brands fa-instagram"></i>
+                        </div>
+                      </div>
+                      <!-- overlay Ends -->
+                    </div>
+                            
+                     </div>
+    
+               </div>       
+            
+          </div>
+         </section> 
+         <!-- AEYTOR INSTRAGRAM ENDS HERE -->
+         
+    </main>
+
+    
+     <!-- FOOTER START -->
+     <footer>
+        <!-- FOOTER PRECARD STARTS -->
+        <div class="prefooter container">
+          <div class="row ">
+            
+            <div class="col-lg-3">
+              <div class="freefcard">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <img src="./images/footer t 1.png" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h4>FREE SHIPING</h4> 
+                    <p>all orders over <span>$150</span></p>                 
+                  </div>
+                </div>
+              </div>            
+            </div>
+            <div class="col-lg-3">
+              <div class="freefcard">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <img src="./images/footer t 1.png" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h4>FREE SHIPING</h4> 
+                    <p>all orders over <span>$150</span></p>                 
+                  </div>
+                </div>
+              </div>            
+            </div>
+            <div class="col-lg-3">
+              <div class="freefcard">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <img src="./images/footer t 1.png" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h4>FREE SHIPING</h4> 
+                    <p>all orders over <span>$150</span></p>                 
+                  </div>
+                </div>
+              </div>            
+            </div>
+            <div class="col-lg-3">
+              <div class="freefcard">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <img src="./images/footer t 1.png" alt="">
+                  </div>
+                  <div class="col-9">
+                    <h4>FREE SHIPING</h4> 
+                    <p>all orders over <span>$150</span></p>                 
+                  </div>
+                </div>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER PRECARD ENDS -->
+  
+        <!-- PREFOOTER TOP STARTS -->
+        <div class="prefooterT">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="social col-lg-3 order-3 text-center text-lg-start order-lg-1">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </div>
+              <div class="logo col-lg-6 text-center order-1 order-lg-2">
+                <a href=""><img src="./images/FOOTER Logo.png" alt=""></a>
+              </div>
+              <div class="paid col-lg-3 order-2 text-lg-end text-center order-lg-3 my-4 my-lg-0">
+                <a href="#"> <img src="./images/paidcd.png" alt=""></a>            
+              </div>          
+            </div>
+          </div>
+        </div>
+        <!-- PREFOOTER TOP ENDS -->
+        <!-- PREFOOTEE MIDDLE STARTS -->
+        <div class="prefooterM">
+         <div class="container">
+          <div class="row">
+            <!-- MY ACCOUNT STARTS -->
+            <div class="col-lg-2 d-inline-block " style="padding: 0;">
+             <div class="row">
+              <h5>My Account</h5> 
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span></i>My Account</a>
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>View Cart</a>
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Wishlist</a>
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Compare</a>
+              <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>New Products</a>  
+             </div>         
+            </div>
+            <!-- MY ACCOUNT ENDS -->
+            <!-- MY SUPPORT STARTS -->
+            <div class="col-lg-2" style="padding: 0;">
+              <div class="row">
+                <h5>Support</h5> 
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span></i>Help</a>
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Contact Us</a>
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Feedback</a>
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Customer Service</a>
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Store Locations</a>  
+               </div> 
+            </div>  
+            <!-- MY SUPPORT STARTS -->        
+            <!-- <div class="row"> -->
+              <div class="col-lg-2 openingTime">
+                  <h5>Opening Time</h5>
+                  <div class="row">
+                    <ul>
+                      <li class="d-inline-block justify-content-between">
+                        <p>Mon - Tue:</p>
+                        <p>Wed:</p>
+                        <p>Fri: </p>
+                        <p>Sat: </p>
+                        <p>Sun:</p>
+  
+                        
+                      </li>
+                      <li class="d-inline-block justify-content-between">
+                        <p>8AM - 10PM</p>
+                        <p> 8AM - 7PM</p>
+                        <p>7AM - 12PM</p>
+                        <p>9AM - 8PM</p>
+                        <p>Closed</p>
+                        
+                      </li>
+                    </ul >
+                  </div>
+                
+              </div>
+            <!-- </div> -->
+            <!-- MY SUPPORT ENDS -->
+  
+              <!-- MY CONTACT STARTS --> 
+              <div class="col-lg-3 contact">
+                <h5>Contact Us</h5>
+                <ul class="d-flex" >
+                  <li><i class="fa-solid fa-location-dot"></i></li>
+                  <li><a href="#">830 Broad way, New York, NY 10003,
+                    United States</a></li>
+                </ul>
+                <ul class="d-flex" >
+                  <li><i class="fa-solid fa-phone"></i></li>
+                  <li><a href="tell:+18008660286">+18008660286</a></li>
+                </ul>
+                <ul class="d-flex" >
+                  <li><i class="fa-solid fa-envelope"></i></li>
+                  <li><a href="mailto:aetor.info@gmail.com">aetor.info@gmail.com</a><br><a href="mailto:info@aetor.com">info@aetor.com</a></li>
+                </ul>           
+                  
+          </div>
+            <!-- MY CONTACT ENDS --> 
+            <!-- MY NEWSLETTER STARTS --> 
+            <div class="col-lg-3 newsLetter"> 
+              <h5>News Letter</h5> 
+              <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>         
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter your email...." aria-label="Enter your email...." aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+                  </div>            
+                  
+                </div>
+                <!-- MY NEWS LETTER ENDS --> 
+              </div>
+            </div>
+          </div>
+          <!-- PREFOOTER MIDDLE ENDS -->
+         </div>
+        </div>
+      </footer>
+      <!-- FOOTER ENDS -->
+      <!-- LAST FOOTER STARTS -->
+      <section id="lastFooter">
+        <div class="copyright">
+          <p>© 2022 All Rights Reserved <span>Aytor</span> By <span> Angfuzsoft.</span></p>
+  
+        </div>
+      </section>
+       <!-- LAST FOOTER ENDS -->  
+      
+  
+  <!-- JS ONLY -->
+  <!-- J QUERY -->
+  <script src="./js/jquery-3.7.1.min.js"></script>  
+  <!-- BOOTSTRAP JS -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- SLIK JS -->
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery.countdown.min.js"></script>    
+  <script src="./js/jquery.waypoints.min.js"></script>
+  <script src="./js/jquery.counterup.min.js"></script>
+  <!-- MAIN JS -->
+  <script src="./js/apps.js"></script>
+  </body>
+  </html>
